@@ -187,6 +187,15 @@ img {
   margin-top: 2.5%;
   margin-bottom: 2.5%;
 }
+@media (max-width: 500px) {
+  .container-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-nav a {
+    padding: 10px 10px 0px;
+  }
+}
 .container-nav nav {
   font-size: 1em;
   display: flex;
