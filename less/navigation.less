@@ -1,1 +1,38 @@
 // Navigation Styles here
+
+
+
+
+.dotted-line {
+    border-bottom: 2px dashed @navigation-border
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    // border: 1px solid red; 
+@media @mobile {
+    flex-direction: column;
+    align-items: center;
+        a {
+            padding: 10px 10px 0px;
+        }
+}
+    nav {
+    font-size: 1em;
+    display: flex;
+    // border: 1px solid blue;
+
+        a {
+            margin-right: 2.5em;
+            font-size: 1.5em;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            // border: 1px dashed blue;
+        }
+    }
+}
+

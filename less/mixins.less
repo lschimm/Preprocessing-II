@@ -1,1 +1,22 @@
 // Mixins in here
+
+.custom-layout(@b, @s, @h){
+    border: @b @s  @h;
+    color: @h;
+    background-color: teal;
+    font-size: 2em;
+    text-align: center;
+    padding: 5%;
+    border-radius: 15px;
+    width: 85%;
+}
+
+.btn {
+    .custom-layout(1px, solid, white)
+}
+
+@media @mobile {
+    .btn {
+        width: 100%;
+    }
+}
